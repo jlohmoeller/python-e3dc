@@ -662,9 +662,6 @@ class E3DC:
                     else:
                         raise TypeError("period in " + idle_type + " is not a dict")
 
-                else:
-                    raise TypeError(idle_type + " is not a dict")
-
         result = self.sendRequest(
             (RscpTag.EMS_REQ_SET_IDLE_PERIODS, RscpType.Container, periodList),
             keepAlive=keepAlive,
